@@ -1,0 +1,127 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+.hide { 
+    display: none !important;
+}
+.menu__list { 
+    margin: 0; 
+    padding: 10px 20px; 
+    list-style-type: none; 
+    border-radius: 4px; 
+    background: #e2e2e2; 
+    bottom: 0; 
+    right: 0; 
+    transform: translateY(100%); 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    animation: menu-showing .3s;
+}
+@keyframes menu-showing { 
+    from { 
+        transform: translateY(95%); 
+    } 
+}
+.menu_item{
+    padding-left: 200px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+.menu_button{
+    padding: 5px 0;
+    align-items: center;
+    max-width: 200px;
+}
+h1,
+h2,
+h3{
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: grey;
+}
+
+.header_logo{
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 20px;
+}
+
+.hero_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_title{
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero_subtitile{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero_subsubtitile{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero_links{
+    display: flex;
+}
+
+.hero_link{
+    margin-right: 10px;
+    font-size: 30px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.hero_link:hover{
+    color: #4facfe
+}
+
+.hero_box{
+    max-width: 500px;
+    justify-self: center;
+    overflow: hidden;
+    border: 10px solid antiquewhite;
+    box-shadow: 2px 5px 10px;
+}
